@@ -56,7 +56,7 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'defaultSidebar',
           position: 'left',
           label: 'Tutorial',
         },
@@ -73,27 +73,18 @@ const config: Config = {
         {
           title: 'Docs',
           items: [
-            {
-              label: 'About',
-              to: '/docs/intro',
-            },
-          ],
+            { label: 'About', to: '/docs/intro' } // Ensure this is valid
+          ]
         },
         {
           title: 'Community',
           items: [
-            {
-              label: 'Discord',
-              href: 'The link will be available soon',
-            },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
-          ],
-        },
+            { label: 'Discord', href: 'https://discord.com' }, // Replace with valid link or remove
+            { label: 'X', href: 'https://x.com/docusaurus' }
+          ]
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Gym Management System, Inc. Built with Docusaurus.`,
+      copyright: 'Copyright © 2025 Gym Management System, Inc. Built with Docusaurus.'
     },
     prism: {
       theme: prismThemes.github,
